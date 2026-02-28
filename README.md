@@ -1,25 +1,43 @@
 
-Installation information
-=======
+Ashwake Main Menu
+=================
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Custom NeoForge client module for the Ashwake modpack front-end.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+It replaces vanilla main flow screens with an Ashwake-styled UI system, including:
+- Main menu replacement
+- Play hub, custom singleplayer/multiplayer flows
+- Custom loading overlay
+- Guidance/FAQ/changelog screens
+- Window branding (title + icon)
+- UI performance and accessibility controls
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Repository
+----------
+- GitHub: https://github.com/Ashwake-MC/Ashwake_MainMenu
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+Target stack
+------------
+- Minecraft: 1.21.1
+- NeoForge: 21.1.219
+- Java: 21
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Development
+-----------
+- Open in IntelliJ IDEA.
+- Build:
+  - `./gradlew compileJava`
+  - `./gradlew jar`
+- Run client dev environment:
+  - `./gradlew runClient`
+
+Output
+------
+- Built jar: `build/libs/ashwake_mainmenu-<version>.jar`
+- Local runtime test mod path used in this project:
+  - `run/mods/ashwake-1.0.0.jar`
+
+License
+-------
+This project is distributed under an `All Rights Reserved` license.
+See [LICENSE](LICENSE).
